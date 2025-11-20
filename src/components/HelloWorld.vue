@@ -31,10 +31,23 @@
 </template>
 
 <script>
+import { greet, calculateSum, getCurrentTime } from '@/utils/example.js';
+import exampleUtils from '@/utils/example.js';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted() {
+    // 调用从外部JS文件导入的函数并将结果打印到控制台
+    console.log(greet('Vue Developer'));
+    console.log('Sum of 5 and 3:', calculateSum(5, 3));
+    console.log('Current time:', getCurrentTime());
+
+    // 使用默认导出的对象
+    console.log(exampleUtils.greet('Using default export'));
+    console.log('Sum using default export:', exampleUtils.calculateSum(10, 15));
   }
 }
 </script>

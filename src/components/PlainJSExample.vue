@@ -15,7 +15,7 @@
 
 <script>
 // 方式1: 直接引入，会执行文件中的代码
-import '@/utils/plainUtils.js';
+import '@/assets/plainUtils.js';
 
 export default {
   name: 'PlainJSExample',

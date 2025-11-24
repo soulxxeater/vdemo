@@ -27,7 +27,7 @@ export default {
   methods: {
     loadAndUsePlainJS() {
       // 方式3: 使用require动态引入
-      require('@/utils/plainUtils.js');
+      require('@/assets/plainUtils.js');
       
       // 使用引入后可用的全局变量和函数
       this.appVersion = window.APP_VERSION || 'Not available';

@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -31,8 +32,8 @@
 </template>
 
 <script>
-import { greet, calculateSum, getCurrentTime } from '@/utils/example.js';
-import exampleUtils from '@/utils/example.js';
+import { greet, calculateSum, getCurrentTime } from '@/assets/example.js';
+import exampleUtils from '@/assets/example.js';
 
 export default {
   name: 'HelloWorld',

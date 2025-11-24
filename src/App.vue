@@ -4,17 +4,20 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <PlainJSExample />
     <RequireExample />
+    <CaCertLogin /> 
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import CaCertLogin from './components/Test.vue'
 import PlainJSExample from './components/PlainJSExample.vue'
 import RequireExample from './components/RequireExample.vue'
 
 export default {
   name: 'App',
   components: {
+    CaCertLogin,
     HelloWorld,
     PlainJSExample,
     RequireExample

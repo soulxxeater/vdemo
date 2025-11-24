@@ -1,0 +1,2 @@
+// core.js
+module.exports = {};
